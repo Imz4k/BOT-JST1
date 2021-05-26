@@ -28,7 +28,7 @@ bot.onText(/\/menu/, (msg) => {
     );   
 });
 
-bot.onText(/\/menu/, (msg) => { 
+bot.onText(/\/predict/, (msg) => { 
     console.log(msg)
     bot.sendMessage(
         msg.chat.id,
