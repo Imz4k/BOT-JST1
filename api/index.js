@@ -48,10 +48,10 @@ bot.on('message', (msg) => {
                 msg.chat.id,
                 'nilai p yang di prediksi adalah ${jres[1]} watt'
             );
-        })
-    }else{
-        state = 0
-    }
+       })
+   }else{
+       state = 0
+   }
 })
 
 // routers
