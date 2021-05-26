@@ -20,7 +20,7 @@ bot.onText(/\/start/, (msg) => {
 });
 
 // input requires i and r
-state = 0
+state = 0;
 bot.onText(/\/predict/, (msg) => { 
     console.log(msg)
     bot.sendMessage(
