@@ -9,7 +9,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const token = '1812069205:AAGRYRfWv6HOqDWdJTqxB786nNftAFmGI80'
 const bot = new TelegramBot(token, {polling: true});
 
-// Main menu bots
+// Main menu bot
 bot.onText(/\/start/, (msg) => { 
     console.log(msg)
     bot.sendMessage(
@@ -31,7 +31,7 @@ bot.onText(/\/predict/, (msg) => {
 
 bot.on('message', (msg) => { 
     if(state == 1){
-        s = msg,text,split("|");
+        s = msg.text.split("|");
         i = s[0]
         v = s[1]
         model.predict(
