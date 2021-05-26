@@ -28,6 +28,14 @@ bot.onText(/\/menu/, (msg) => {
     );   
 });
 
+bot.onText(/\/menu/, (msg) => { 
+    console.log(msg)
+    bot.sendMessage(
+        msg.chat.id,
+        `masukan nilai i|v contohnya 9|9`
+    );   
+});
+
 // routers
 r.get('/prediction/:i/:r', function(req, res, next) {    
     model.predict(
