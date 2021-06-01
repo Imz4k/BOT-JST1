@@ -57,11 +57,7 @@ bot.on('message', (msg) => {
                 state = 0;
             })         
        })
-   }else{
-       bot.sendMessage(
-       msg.chat.id,
-            `Please click /start`
-       );    
+   }else{  
        state = 0
    }
 })
