@@ -67,7 +67,7 @@ bot.onText(/\/predict/, (msg) => {
     })
 
 // routers
-r.get('/prediction/:i/:r', function(req, res, next) {    
+r.get('/predict/:i/:r', function(req, res, next) {    
     model.predict(
         [
             parseFloat(req.params.i), // string to float
